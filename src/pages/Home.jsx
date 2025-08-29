@@ -1,37 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react'; // Import useContext
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import PdfUploader from '../components/PdfUploader';
-import booksData from '../data/books.json';
+import { BookContext } from '../context/BookContext'; // Import the context
 
 const Home = () => {
-  const [books, setBooks] = useState([]);
+  // Get books and the addBook function from the context
+  const { books, addBook } = useContext(BookContext);
 
-  useEffect(() => {
-    setBooks(booksData);
-  }, []);
-
+  // This function will now add the book to our shared state
   const handlePdfUpload = (file) => {
-    console.log('Uploaded PDF:', file);
-    // In a real app, you would add the new book to your state here
+    if (file) {
+      addBook(file);
+    }
   };
 
   return (
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
       <main className="container mx-auto px-6 py-8">
-        {/* Header Section */}
         <div className="bg-white p-6 rounded-lg shadow-md mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Your Library</h1>
           <p className="text-gray-600">Browse your collection or upload a new textbook to get started.</p>
         </div>
 
-        {/* PDF Uploader Section */}
         <div className="mb-12">
           <PdfUploader onPdfUpload={handlePdfUpload} />
         </div>
 
-        {/* Book Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {books.map((book) => (
             <div 

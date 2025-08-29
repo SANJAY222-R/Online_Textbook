@@ -1,26 +1,26 @@
-// src/components/Reader.jsx
-
-import React, { useState, useEffect, useRef } from "react"; // Import useRef
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import PdfViewer from "../components/PdfViewer";
-import booksData from "../data/books.json";
+import { BookContext } from '../context/BookContext'; // Import the context
 import { parsePdfToc } from "../utils/pdfParser";
 
 const Reader = () => {
   const { bookId } = useParams();
+  // Get the list of all books from the context
+  const { books } = useContext(BookContext);
+
   const [book, setBook] = useState(null);
   const [toc, setToc] = useState([]);
   const [isLoadingToc, setIsLoadingToc] = useState(true);
   const [error, setError] = useState(null);
-
-  // **Create a ref to hold references to each page's container div**
   const pageRefs = useRef({});
 
   useEffect(() => {
     const loadBookData = async () => {
-      const selectedBook = booksData.find((b) => b.id === bookId);
+      // Find the selected book from the context's state
+      const selectedBook = books.find((b) => b.id === bookId);
 
       if (!selectedBook) {
         setError("Book not found");
@@ -30,10 +30,12 @@ const Reader = () => {
       
       setBook(selectedBook);
 
+      // First, check for a manually defined TOC in the JSON data.
       if (selectedBook.toc && selectedBook.toc.length > 0) {
         setToc(selectedBook.toc);
         setIsLoadingToc(false);
       } else {
+        // If no manual TOC is found, THEN try to parse the PDF automatically.
         try {
           const extractedToc = await parsePdfToc(selectedBook.file);
           setToc(extractedToc);
@@ -46,10 +48,13 @@ const Reader = () => {
       }
     };
 
-    loadBookData();
-  }, [bookId]);
+    // Ensure books from context are loaded before trying to find one
+    if (books.length > 0) {
+      loadBookData();
+    }
+  }, [bookId, books]);
   
-  // **Function to handle scrolling to a specific page**
+  // Handles scrolling to the page clicked in the sidebar
   const handleSectionClick = (pageNumber) => {
     const pageRef = pageRefs.current[pageNumber];
     if (pageRef) {
@@ -60,13 +65,20 @@ const Reader = () => {
     }
   };
 
-
   if (error) {
-    return <div className="text-red-500 p-4">Error: {error}</div>;
+    return (
+      <div className="flex justify-center items-center h-screen bg-gray-100">
+        <div className="text-red-500 p-4 bg-white rounded shadow-md">Error: {error}</div>
+      </div>
+    );
   }
 
   if (!book) {
-    return <div className="flex justify-center items-center h-screen">Loading Book...</div>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        Loading Book...
+      </div>
+    );
   }
 
   return (
@@ -74,11 +86,9 @@ const Reader = () => {
       <Navbar />
       <div className="flex flex-1 overflow-hidden bg-gray-100">
         <aside className="w-80 bg-white shadow-lg overflow-y-auto hidden md:block">
-          {/* **Pass the click handler function to the Sidebar** */}
           <Sidebar sections={toc} isLoading={isLoadingToc} onSectionClick={handleSectionClick} />
         </aside>
         <main className="flex-1 overflow-y-auto">
-          {/* **Pass the pageRefs object to the PdfViewer** */}
           <PdfViewer file={book.file} pageRefs={pageRefs} />
         </main>
       </div>

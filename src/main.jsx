@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-// This path is now corrected to point to your actual CSS file.
-import './index.css'; 
+import { BrowserRouter } from 'react-router-dom';
+import { BookProvider } from './context/BookContext';
+import './index.css'; // Make sure your main css is imported
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    {/* The single, top-level router wraps everything */}
     <BrowserRouter>
-      <App />
+      {/* The context provider is inside the router */}
+      <BookProvider>
+        <App />
+      </BookProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

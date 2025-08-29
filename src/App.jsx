@@ -1,11 +1,16 @@
 import React from 'react';
-import AppRoutes from './routes';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Reader from './pages/Reader';
 
+// Notice: No Router and no Provider here.
+// They are in main.jsx now.
 function App() {
   return (
-    <div className="App">
-      <AppRoutes />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/reader/:bookId" element={<Reader />} />
+    </Routes>
   );
 }
 
