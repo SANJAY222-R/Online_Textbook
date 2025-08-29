@@ -1,14 +1,15 @@
+// src/components/PdfViewer.jsx
+
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-// Corrected CSS IMPORTS for modern react-pdf versions
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
-// THIS IS THE FIX: Set the worker source to a reliable CDN instead of trying to import it.
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-const PdfViewer = ({ file }) => {
+// **Accept pageRefs as a prop**
+const PdfViewer = ({ file, pageRefs }) => {
   const [numPages, setNumPages] = useState(null);
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
@@ -24,10 +25,15 @@ const PdfViewer = ({ file }) => {
         error={<div className="p-4 text-lg text-red-500 bg-white rounded shadow">Failed to load PDF file.</div>}
       >
         {Array.from(new Array(numPages || 0), (el, index) => (
-          <div key={`page_${index + 1}`} className="mb-4 shadow-lg">
+          // **Attach the ref to this container div**
+          <div
+            key={`page_${index + 1}`}
+            ref={(el) => (pageRefs.current[index + 1] = el)}
+            className="mb-4 shadow-lg"
+          >
             <Page
               pageNumber={index + 1}
-              width={Math.min(800, window.innerWidth - 60)} // Make page width responsive
+              width={Math.min(800, window.innerWidth - 60)}
             />
           </div>
         ))}

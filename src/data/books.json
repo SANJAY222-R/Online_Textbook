@@ -1,8 +1,41 @@
 [
   {
-    "id": "default-book",
-    "title": "Default Textbook",
-    "author": "Jane Doe",
-    "file": "/default.pdf"
+    "id": "relativity-einstein",
+    "title": "Relativity: The Special and General Theory",
+    "author": "Albert Einstein",
+    "file": "/Relativity.pdf",
+    "toc": [
+      { "title": "Preface", "page": 14 },
+      { "title": "PART I: THE SPECIAL THEORY OF RELATIVITY", "page": 15 },
+      { "title": "I. Physical Meaning of Geometrical Propositions", "page": 16 },
+      { "title": "II. The System of Co-ordinates", "page": 18 },
+      { "title": "III. Space and Time in Classical Mechanics", "page": 20 },
+      { "title": "IV. The Galileian System of Co-ordinates", "page": 21 },
+      { "title": "V. The Principle of Relativity (Restricted Sense)", "page": 22 },
+      { "title": "VI. Addition of Velocities in Classical Mechanics", "page": 24 },
+      { "title": "VII. The Law of Propagation of Light", "page": 25 },
+      { "title": "VIII. On the Idea of Time in Physics", "page": 27 },
+      { "title": "IX. The Relativity of Simultaneity", "page": 29 },
+      { "title": "X. On the Relativity of Distance", "page": 31 },
+      { "title": "XI. The Lorentz Transformation", "page": 32 },
+      { "title": "XII. Behaviour of Measuring-Rods and Clocks", "page": 35 },
+      { "title": "XIII. Theorem of Addition of Velocities", "page": 37 },
+      { "title": "XIV. The Heuristic Value of the Theory", "page": 39 },
+      { "title": "XV. General Results of the Theory", "page": 40 },
+      { "title": "XVI. Experience and the Special Theory", "page": 43 },
+      { "title": "XVII. Minkowski's Four-Dimensional Space", "page": 45 },
+      { "title": "PART II: THE GENERAL THEORY OF RELATIVITY", "page": 47 },
+      { "title": "XVIII. Special and General Principle of Relativity", "page": 48 },
+      { "title": "XIX. The Gravitational Field", "page": 50 },
+      { "title": "XX. Equality of Inertial and Gravitational Mass", "page": 52 },
+      { "title": "XXII. Inferences from the General Principle", "page": 55 },
+      { "title": "XXIII. Clocks and Measuring-Rods on a Rotating Body", "page": 57 },
+      { "title": "PART III: CONSIDERATIONS ON THE UNIVERSE", "page": 71 },
+      { "title": "XXX. Cosmological Difficulties of Newton's Theory", "page": 72 },
+      { "title": "XXXI. A 'Finite' and yet 'Unbounded' Universe", "page": 73 },
+      { "title": "APPENDIX I: Lorentz Transformation", "page": 76 },
+      { "title": "APPENDIX II: Minkowski's Four-Dimensional Space", "page": 80 },
+      { "title": "APPENDIX III: Experimental Confirmation", "page": 81 }
+    ]
   }
 ]
