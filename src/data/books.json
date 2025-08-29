@@ -1,0 +1,8 @@
+[
+  {
+    "id": "default-book",
+    "title": "Default Textbook",
+    "author": "Jane Doe",
+    "file": "/default.pdf"
+  }
+]
