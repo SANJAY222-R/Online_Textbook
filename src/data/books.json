@@ -3,16 +3,25 @@
     "id": "relativity-einstein",
     "title": "Relativity: The Special and General Theory",
     "author": "Albert Einstein",
-    "file": "/Relativity.pdf",
+    "file": "/pdfs/Relativity.pdf",
     "toc": [
       { "title": "Preface", "page": 14 },
       { "title": "PART I: THE SPECIAL THEORY OF RELATIVITY", "page": 15 },
-      { "title": "I. Physical Meaning of Geometrical Propositions", "page": 16 },
+      {
+        "title": "I. Physical Meaning of Geometrical Propositions",
+        "page": 16
+      },
       { "title": "II. The System of Co-ordinates", "page": 18 },
       { "title": "III. Space and Time in Classical Mechanics", "page": 20 },
       { "title": "IV. The Galileian System of Co-ordinates", "page": 21 },
-      { "title": "V. The Principle of Relativity (Restricted Sense)", "page": 22 },
-      { "title": "VI. Addition of Velocities in Classical Mechanics", "page": 24 },
+      {
+        "title": "V. The Principle of Relativity (Restricted Sense)",
+        "page": 22
+      },
+      {
+        "title": "VI. Addition of Velocities in Classical Mechanics",
+        "page": 24
+      },
       { "title": "VII. The Law of Propagation of Light", "page": 25 },
       { "title": "VIII. On the Idea of Time in Physics", "page": 27 },
       { "title": "IX. The Relativity of Simultaneity", "page": 29 },
@@ -25,17 +34,172 @@
       { "title": "XVI. Experience and the Special Theory", "page": 43 },
       { "title": "XVII. Minkowski's Four-Dimensional Space", "page": 45 },
       { "title": "PART II: THE GENERAL THEORY OF RELATIVITY", "page": 47 },
-      { "title": "XVIII. Special and General Principle of Relativity", "page": 48 },
+      {
+        "title": "XVIII. Special and General Principle of Relativity",
+        "page": 48
+      },
       { "title": "XIX. The Gravitational Field", "page": 50 },
-      { "title": "XX. Equality of Inertial and Gravitational Mass", "page": 52 },
+      {
+        "title": "XX. Equality of Inertial and Gravitational Mass",
+        "page": 52
+      },
       { "title": "XXII. Inferences from the General Principle", "page": 55 },
-      { "title": "XXIII. Clocks and Measuring-Rods on a Rotating Body", "page": 57 },
+      {
+        "title": "XXIII. Clocks and Measuring-Rods on a Rotating Body",
+        "page": 57
+      },
       { "title": "PART III: CONSIDERATIONS ON THE UNIVERSE", "page": 71 },
-      { "title": "XXX. Cosmological Difficulties of Newton's Theory", "page": 72 },
+      {
+        "title": "XXX. Cosmological Difficulties of Newton's Theory",
+        "page": 72
+      },
       { "title": "XXXI. A 'Finite' and yet 'Unbounded' Universe", "page": 73 },
       { "title": "APPENDIX I: Lorentz Transformation", "page": 76 },
-      { "title": "APPENDIX II: Minkowski's Four-Dimensional Space", "page": 80 },
+      {
+        "title": "APPENDIX II: Minkowski's Four-Dimensional Space",
+        "page": 80
+      },
       { "title": "APPENDIX III: Experimental Confirmation", "page": 81 }
+    ]
+  },
+  {
+    "id": "time-machine-wells",
+    "title": "The Time Machine",
+    "author": "H. G. Wells",
+    "file": "/pdfs/TimeMachine.pdf",
+    "toc": [
+      { "title": "I. Introduction", "page": 5 },
+      { "title": "II. The Machine", "page": 8 },
+      { "title": "III. The Time Traveller Returns", "page": 10 },
+      { "title": "IV. Time Travelling", "page": 13 },
+      { "title": "V. In the Golden Age", "page": 16 },
+      { "title": "VI. The Sunset of Mankind", "page": 18 },
+      { "title": "VII. A Sudden Shock", "page": 21 },
+      { "title": "VIII. Explanation", "page": 24 },
+      { "title": "IX. The Morlocks", "page": 29 },
+      { "title": "X. When Night Came", "page": 32 },
+      { "title": "XI. The Palace of Green Porcelain", "page": 35 },
+      { "title": "XII. In the Darkness", "page": 38 },
+      { "title": "XIII. The Trap of the White Sphinx", "page": 41 },
+      { "title": "XIV. The Further Vision", "page": 43 },
+      { "title": "XV. The Time Traveller's Return", "page": 46 },
+      { "title": "XVI. After the Story", "page": 47 },
+      { "title": "Epilogue", "page": 49 }
+    ]
+  },
+  {
+    "id": "frankenstein-shelley",
+    "title": "Frankenstein",
+    "author": "Mary Wollstonecraft Shelley",
+    "file": "/pdfs/Frankenstein.pdf",
+    "toc": [
+      { "title": "Letter 1", "page": 4 },
+      { "title": "Letter 2", "page": 6 },
+      { "title": "Letter 3", "page": 8 },
+      { "title": "Letter 4", "page": 9 },
+      { "title": "Chapter 1", "page": 13 },
+      { "title": "Chapter 2", "page": 16 },
+      { "title": "Chapter 3", "page": 19 },
+      { "title": "Chapter 4", "page": 22 },
+      { "title": "Chapter 5", "page": 25 },
+      { "title": "Chapter 6", "page": 28 },
+      { "title": "Chapter 7", "page": 32 },
+      { "title": "Chapter 8", "page": 37 },
+      { "title": "Chapter 9", "page": 41 },
+      { "title": "Chapter 10", "page": 44 },
+      { "title": "Chapter 11", "page": 47 },
+      { "title": "Chapter 12", "page": 51 },
+      { "title": "Chapter 13", "page": 54 },
+      { "title": "Chapter 14", "page": 57 },
+      { "title": "Chapter 15", "page": 60 },
+      { "title": "Chapter 16", "page": 64 },
+      { "title": "Chapter 17", "page": 68 },
+      { "title": "Chapter 18", "page": 71 },
+      { "title": "Chapter 19", "page": 75 },
+      { "title": "Chapter 20", "page": 79 },
+      { "title": "Chapter 21", "page": 83 },
+      { "title": "Chapter 22", "page": 88 },
+      { "title": "Chapter 23", "page": 93 },
+      { "title": "Chapter 24", "page": 96 }
+    ]
+  },
+  {
+    "id": "strange-house-shaw",
+    "title": "The Strange House; or, A Moment's Mistake",
+    "author": "Catharine Shaw",
+    "file": "/pdfs/StrangeHouse.pdf",
+    "toc": [
+      { "title": "I. NEXT DOOR", "page": 8 },
+      { "title": "II. POVERTY KNOCKS AT THE DOOR", "page": 11 },
+      { "title": "III. LOVE DOES NOT FLY OUT OF THE WINDOW", "page": 14 },
+      { "title": "IV. GONE", "page": 17 },
+      { "title": "V. MOLLIE'S WELCOME", "page": 20 },
+      { "title": "VI. ALL SIX!", "page": 23 },
+      { "title": "VII. CONWAY'S DISCOVERIES", "page": 26 },
+      { "title": "VIII. DAISY'S \"CHUM\"", "page": 28 },
+      { "title": "IX. A CHAMPION", "page": 31 },
+      { "title": "X. A SONG", "page": 34 },
+      { "title": "XI. A SCRIMMAGE", "page": 37 },
+      { "title": "XII. MARMALADE", "page": 40 },
+      { "title": "XIII. THE OVERTURNED BASKET", "page": 43 },
+      { "title": "XIV. \"Χ. Υ. Ζ.\"", "page": 46 },
+      { "title": "XV. LITTLE LESTER", "page": 49 },
+      { "title": "XVI. A LATE VISITOR", "page": 52 },
+      { "title": "XVII. BEFORE DAWN", "page": 55 },
+      { "title": "XVIII. SUNRISE", "page": 58 },
+      { "title": "XIX. ROSE GUESSES SOMETHING", "page": 61 },
+      { "title": "XX. UP THE CHIMNEY", "page": 64 },
+      { "title": "XXI. BY THE NURSERY FIRE", "page": 67 },
+      { "title": "ΧΧΙΙ. ΝΟ THOROUGHFARE", "page": 70 },
+      { "title": "XXIII. A HINDRANCE", "page": 73 },
+      { "title": "XXIV. AT THE GRAVE", "page": 76 },
+      { "title": "XXV. JOHNNIE'S JOKE", "page": 79 },
+      { "title": "XXVI. FLIGHT", "page": 82 },
+      { "title": "XXVII. A DARK RIDE", "page": 85 },
+      { "title": "XXVIII. ALMOST", "page": 88 },
+      { "title": "XXIX. AT LAST", "page": 91 },
+      { "title": "XXX. WRAPPED IN A CLOAK", "page": 95 },
+      { "title": "ΧΧΧΙ. ΑΝΟTHER PROMISE", "page": 98 },
+      { "title": "XXXII. A VIGIL", "page": 101 },
+      { "title": "XXXIII. \"FRITZ IS COMING\"", "page": 104 },
+      { "title": "XXXIV. SET TO WORK", "page": 107 },
+      { "title": "XXXV. OUTSIDE THE GREAT NORTHERN", "page": 110 },
+      { "title": "XXXVI. BY AND BY", "page": 114 },
+      { "title": "XXXVII. A NEW THOUGHT", "page": 116 },
+      { "title": "XXXVIII. IN THE MUSEUM", "page": 119 },
+      { "title": "XXXIX. HIDING", "page": 123 },
+      { "title": "XL. RANDALL'S MISCHIEF", "page": 127 },
+      { "title": "XLI. TWO SIDES OF A STORY", "page": 130 },
+      { "title": "XLII. CLOUDS", "page": 133 },
+      { "title": "XLIII. \"WAITING FOR YOU!\"", "page": 136 },
+      { "title": "XLIV. A SHORT DRIVE", "page": 139 },
+      { "title": "XLV. TILL WEDNESDAY", "page": 142 },
+      { "title": "XLVI. NURSE'S PLAN", "page": 145 },
+      { "title": "XLVII. THE STRANGE HOUSE AGAIN", "page": 148 },
+      { "title": "XLVIII. RANDALL'S REQUEST", "page": 151 },
+      { "title": "XLIX. WEDNESDAY", "page": 154 },
+      { "title": "L. IN THE CABINET", "page": 158 },
+      { "title": "LI. AT LANRIFFE", "page": 161 },
+      { "title": "LII. RANDALL'S RETURN", "page": 164 }
+    ]
+  },
+  {
+    "id": "occult-science-steiner",
+    "title": "An Outline of Occult Science",
+    "author": "Rudolf Steiner",
+    "file": "/pdfs/OccultScience.pdf",
+    "toc": [
+      { "title": "Preface to the Fourth Edition", "page": 3 },
+      { "title": "Chapter I. The Character of Occult Science", "page": 9 },
+      { "title": "Chapter II. The Nature of Man", "page": 15 },
+      { "title": "Chapter III. Sleep and Death", "page": 25 },
+      { "title": "Chapter IV. The Evolution of the World and Man", "page": 45 },
+      { "title": "Chapter V. Knowledge of the Higher Worlds", "page": 105 },
+      { "title": "Chapter VI. The Future Evolution of the World", "page": 143 },
+      {
+        "title": "Chapter VII. Details from the Domain of Occult Science",
+        "page": 151
+      }
     ]
   }
 ]
